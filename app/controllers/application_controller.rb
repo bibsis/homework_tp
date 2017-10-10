@@ -41,7 +41,9 @@ def thirty
    sum = sum + m[i+p][0].to_i
    p+=1
    end
-  if(sum > max) max = sum end
+  if(sum > max) 
+  max = sum 
+  end
   i+=1
   end
   render plain: '%.2f'%max.ceil
@@ -63,4 +65,5 @@ def lin
   a = linear.slope
   render plain: "#{'%.6f' % a},#{'%.6f' % b}"
   end
-end
+  end
+
