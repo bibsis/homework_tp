@@ -21,7 +21,7 @@ def second
   i = 0
   sum = 0
   while i < m.length do 
-  if m[i][2] % 2 != 0
+  if m[i][2].to_i % 2 != 0
   sum = sum + m[i][1].to_i
   end
   i+=1
