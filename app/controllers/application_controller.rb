@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :null_sessions
   
 def calc
-  app = params[:app].read
+  app = params[:file].read
   m = CSV.parse(app)
   i = 0
   sum = 0
@@ -16,7 +16,7 @@ def calc
 end
 
 def second 
-  app = params[:app].read
+  app = params[:file].read
   m = CSV.parse(app)
   i = 0
   sum = 0
@@ -30,7 +30,7 @@ def second
 end
 
 def thirty
-  app = params[:app].read
+  app = params[:file].read
   m = CSV.parse(app)
   i = 0
   p = 0
@@ -50,7 +50,7 @@ def thirty
 end
 
 def lin
-  app = params[:app].read
+  app = params[:file].read
   m = CSV.parse(app)
   i = 1
   k = 0
