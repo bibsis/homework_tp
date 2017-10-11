@@ -54,6 +54,8 @@ def lin
   m = CSV.parse(app)
   i = 1
   k = 0
+  ind = []
+  values = []
   while(i <= m.length)
   ind[i-1] = i
   end
