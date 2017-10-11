@@ -8,7 +8,7 @@ def calc
   m = CSV.parse(app)
   i = 0
   sum = 0
-  while i < m.lenght do 
+  while i < m.length do 
   sum = sum + m[i][0].to_i
   i+=1
   end
@@ -20,7 +20,7 @@ def second
   m = CSV.parse(app)
   i = 0
   sum = 0
-  while i < m.lenght do 
+  while i < m.length do 
   if m[i][2] % 2 != 0
   sum = sum + m[i][1].to_i
   end
@@ -36,7 +36,7 @@ def thirty
   p = 0
   sum = 0
   max = 0
-  while i < m.lenght do 
+  while i < m.length do 
    while p < 30 do 
    sum = sum + m[i+p][0].to_i
    p+=1
@@ -54,10 +54,10 @@ def lin
   m = CSV.parse(app)
   i = 1
   k = 0
-  while(i <= m.lenght)
+  while(i <= m.length)
   ind[i-1] = i
   end
-  while(k < m.lenght)
+  while(k < m.length)
   values[k][0] = k
   end
   l = Regression::Linear.new(ind, values)
